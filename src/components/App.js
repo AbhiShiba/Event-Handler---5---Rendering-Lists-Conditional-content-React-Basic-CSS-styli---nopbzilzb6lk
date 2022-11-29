@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/App.css';
 const App = () => {
 
-   const eventHandler = (event) {
+   const eventHandler = (event) => {
     event.preventDefault();
      console.log("form submitted");
    }
