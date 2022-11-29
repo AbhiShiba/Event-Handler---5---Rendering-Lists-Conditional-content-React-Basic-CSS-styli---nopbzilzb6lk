@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div id="main">
-      <form>
+      <form onSubmit={eventHandler}>
         <label htmlFor='name'>Name</label>
         <input id="name" type={"text"} />
 
