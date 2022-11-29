@@ -2,6 +2,10 @@ import React from 'react'
 import '../styles/App.css';
 const App = () => {
 
+   const eventHandler = (event) {
+    event.preventDefault();
+     console.log("form submitted");
+   }
 
   return (
     <div id="main">
@@ -11,7 +15,7 @@ const App = () => {
 
         <br />
         <br />
-        <button type='submit'>Submit</button>
+        <button type='submit' onSubmit={eventHandler}>Submit</button>
       </form>
     </div>
   )
